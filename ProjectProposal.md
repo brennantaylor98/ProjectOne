@@ -10,7 +10,7 @@
 - [Xenon Santillian](https://github.com/Xenon789)
 
 ## Concept 
-    You're a Github user or tech enthusiast looking to support new repositories while also needing an application to help you manage your finances. Introducing the Wallet Watchdog. Tell your digital dog about your finances and help manage your expenses by setting monthly goals and limits for yourself. Your wallet watchdog will help you visualize your expenses and adjust your budgets accordingly.
+You're a Github user or tech enthusiast looking to support new repositories while also needing an application to help you manage your finances. Introducing the Wallet Watchdog. Tell your digital dog about your finances and help manage your expenses by setting monthly goals and limits for yourself. Your wallet watchdog will help you visualize your expenses and adjust your budgets accordingly.
 
 ## User Story
 GIVEN a user opens the application THEN they will see the homepage displayed on their screen.
