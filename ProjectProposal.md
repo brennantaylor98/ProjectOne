@@ -1,16 +1,16 @@
 # Wallet Watchdog
 
 ## Team members
-- Brennan Taylor
+- [Brennan Taylor](https://github.com/brennantaylor98)
 
-- Christian Gella [Check out my Github!](https://github.com/christiangella)
+- [Christian Gella](https://github.com/christiangella)
 
-- Timothy Cook [Check out my Github!](https://github.com/Tcook160)
+- [Timothy Cook](https://github.com/Tcook160)
 
-- Xenon Santillian [Check out my Github!](https://github.com/Xenon789)
+- [Xenon Santillian](https://github.com/Xenon789)
 
 ## Concept 
-You're a Github user or tech enthusiast looking to support new repositories while also needing an application to help you manage your finances. Introducing the Wallet Watchdog. Tell your digital dog about your finances and help manage your expenses by setting monthly goals and limits for yourself. Your wallet watchdog will help you visualize your expenses and adjust your budgets accordingly.
+    You're a Github user or tech enthusiast looking to support new repositories while also needing an application to help you manage your finances. Introducing the Wallet Watchdog. Tell your digital dog about your finances and help manage your expenses by setting monthly goals and limits for yourself. Your wallet watchdog will help you visualize your expenses and adjust your budgets accordingly.
 
 ## User Story
 GIVEN a user opens the application THEN they will see the homepage displayed on their screen.
@@ -20,21 +20,20 @@ GIVEN a user wants to track and manage their monthly expenses THEN the user can 
 
 ## Task Breakdown
 - [ ] Styling (CSS & Handlebars)
-- Routes
-- Index ('/')
-- Login
-- Create User Account
-- Logout
-- Dashboard
-- User Accounts Persistence
-- Collecting User Inputs
-- Data Visualization
-- User Goals
-- Server Logic
+- [ ] Routes
+- [ ]  Index ('/')
+- [ ]  Login
+- [ ]  Create User Account
+- [ ] Logout
+- [ ] Dashboard
+- [ ] User Accounts Persistence
+- [ ] Collecting User Inputs
+- [ ] Data Visualization
+- [ ] User Goals
+- [ ] Server Logic
 
 ## User Flow and Wire Frames
 ![Wireframe](https://designli.co/blog/wp-content/uploads/2022/01/User-Registration-Flowchart-1024x785.png)
-[Learn More](https://designli.co/blog/user-flow-for-app-development-a-beginners-guide/)
 
 ## Technologies
 - D3.js Data Visualization
