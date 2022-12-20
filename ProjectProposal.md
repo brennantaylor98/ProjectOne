@@ -33,7 +33,7 @@ GIVEN a user wants to track and manage their monthly expenses THEN the user can 
 - [ ] Server Logic
 
 ## User Flow and Wire Frames
-![Wireframe](https://designli.co/blog/wp-content/uploads/2022/01/User-Registration-Flowchart-1024x785.png)
+![Wireframe](./wireframe002.png)
 
 ## Technologies
 - D3.js Data Visualization
