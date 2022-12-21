@@ -1,14 +1,50 @@
+/* GENERAL & UNIVERSAL STYLES */
+
+/* FONT FAMILIES */
+
+    /* -- IMPORTING FONT-FAMILIES */
+    @font-face {
+      font-family: 'Lemon Milk';
+      src: url(../media/fonts/LEMONMILK-Regular.otf);
+  }
+  
+  @font-face {
+      font-family: 'Lemon Milk Light';
+      src: url(../media/fonts/LEMONMILK-Light.otf);
+  }
+  
+  @font-face {
+      font-family: 'Xhers';
+      src: url(../media/fonts/Xhers\ Regular.otf);
+  }
+  
+  /* -- FONT-FAMILY CLASSES */
+  .xhers {
+      font-family: 'Xhers' !important;
+  }
+  
+  .lemon-milk {
+      font-family: 'Lemon Milk' !important;
+  }
+  
+  .lemon-milk-light {
+      font-family: 'Lemon Milk Light' !important;
+  }
+
+
 body {
   background: linear-gradient(to bottom, #73DBA0, #29BEB7);
-  align-items: center;
-  justify-content: center;
   height: 100%;
   text-align: center;
 }
 
 h1 {
-  font-size: xxx-large;
+  font-size: 48px;
+  color: aliceblue;
+  font-family: 'Lemon Milk';
+  text-align: left;
 }
+
 button {
   border: none;
   padding: 20px 40px;
