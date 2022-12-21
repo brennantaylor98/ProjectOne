@@ -1,24 +1,30 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+body {
+  background: linear-gradient(to bottom, #73DBA0, #29BEB7);
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
 }
 
-.no-button {
-  background: none;
+h1 {
+  font-size: xxx-large;
+}
+button {
   border: none;
-  padding: 0;
+  padding: 20px 40px;
+  font-size: 24px;
   cursor: pointer;
-  color: #1b89bc;
-  text-decoration: none;
-  font-size: 100%;
+  margin: 20px auto;
+  display: block;
+  width: 15%;
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+button:first-of-type {
+  background-color: white;
+  color: #73DBA0;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+button:last-of-type {
+  background-color: #73DBA0;
+  color: white;
 }
