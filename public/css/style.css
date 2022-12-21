@@ -39,20 +39,48 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 60px;
   color: aliceblue;
   font-family: 'Lemon Milk';
   text-align: left;
 }
 
+h2 {
+  font-size: 18px;
+  text-align: left;
+  font-family: 'Lemon Milk Light';
+}
+
+.landingh1 {
+  padding-top: 100px;
+}
+
+.landingh2 {
+  padding-bottom: 195px;
+  margin-left: 10px;
+}
+
+/*
+body::before {
+  content: "";
+  position: fixed;
+  bottom: -250px;
+  right: -300px;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+} */
+
 button {
+  font-family: 'Lemon Milk Light';
   border: none;
   padding: 20px 40px;
-  font-size: 24px;
+  font-size: 15px;
   cursor: pointer;
   margin: 20px auto;
   display: block;
-  width: 15%;
+  width: 90%;
 }
 
 button:first-of-type {
@@ -61,6 +89,7 @@ button:first-of-type {
 }
 
 button:last-of-type {
-  background-color: #73DBA0;
+  background-color: transparent;
   color: white;
+  border: 2px solid #fff;
 }
