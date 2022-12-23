@@ -2,7 +2,10 @@
   {
     "name": "Sal",
     "email": "sal@hotmail.com",
-    "password": "password12345"
+    "password": "password12345",
+    "monthly_expense_name": "Mortgage",
+    "monthly_expense_amount": "1701.23"
+
   },
   {
     "name": "Lernantino",

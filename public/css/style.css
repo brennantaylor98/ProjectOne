@@ -1,9 +1,14 @@
 /* GENERAL & UNIVERSAL STYLES */
 
+::selection {
+  color: #fff;
+  background-color: #29BEB7;
+}
+
 /* FONT FAMILIES */
 
-    /* -- IMPORTING FONT-FAMILIES */
-    @font-face {
+  /* -- IMPORTING FONT-FAMILIES */
+  @font-face {
       font-family: 'Lemon Milk';
       src: url(../media/fonts/LEMONMILK-Regular.otf);
   }
@@ -31,31 +36,33 @@
       font-family: 'Lemon Milk Light' !important;
   }
 
+/* GENERAL STYLES */
 
-body {
+.gradientbg {
   background: linear-gradient(to bottom, #73DBA0, #29BEB7);
   height: 100%;
-  text-align: center;
+  background-attachment: fixed;
 }
 
 h1 {
-  font-size: 60px;
-  color: aliceblue;
   font-family: 'Lemon Milk';
-  text-align: left;
 }
 
 h2 {
-  font-size: 18px;
-  text-align: left;
   font-family: 'Lemon Milk Light';
 }
 
 .landingh1 {
+  font-size: 60px;
+  color: #fff;
+  font-family: 'Lemon Milk';
+  text-align: left;
   padding-top: 100px;
 }
 
 .landingh2 {
+  font-size: 18px;
+  text-align: left;
   padding-bottom: 195px;
   margin-left: 10px;
 }
