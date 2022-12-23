@@ -1,6 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+<<<<<<< HEAD
+
+=======
 class Wallet extends Model {}
 
 Wallet.init(
@@ -36,5 +39,6 @@ Wallet.init(
         modelName: 'Wallet',
     }
 )
+>>>>>>> 064302422da4c211b23f3ef6d903b2c415c3c5b3
 
 module.exports = Wallet;

@@ -1,9 +1,14 @@
 /* GENERAL & UNIVERSAL STYLES */
 
+::selection {
+  color: #fff;
+  background-color: #29BEB7;
+}
+
 /* FONT FAMILIES */
 
-    /* -- IMPORTING FONT-FAMILIES */
-    @font-face {
+  /* -- IMPORTING FONT-FAMILIES */
+  @font-face {
       font-family: 'Lemon Milk';
       src: url(../media/fonts/LEMONMILK-Regular.otf);
   }
@@ -31,28 +36,58 @@
       font-family: 'Lemon Milk Light' !important;
   }
 
+/* GENERAL STYLES */
 
-body {
+.gradientbg {
   background: linear-gradient(to bottom, #73DBA0, #29BEB7);
   height: 100%;
-  text-align: center;
+  background-attachment: fixed;
 }
 
 h1 {
-  font-size: 48px;
-  color: aliceblue;
   font-family: 'Lemon Milk';
-  text-align: left;
 }
 
+h2 {
+  font-family: 'Lemon Milk Light';
+}
+
+.landingh1 {
+  font-size: 60px;
+  color: #fff;
+  font-family: 'Lemon Milk';
+  text-align: left;
+  padding-top: 100px;
+}
+
+.landingh2 {
+  font-size: 18px;
+  text-align: left;
+  padding-bottom: 195px;
+  margin-left: 10px;
+}
+
+/*
+body::before {
+  content: "";
+  position: fixed;
+  bottom: -250px;
+  right: -300px;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+} */
+
 button {
+  font-family: 'Lemon Milk Light';
   border: none;
   padding: 20px 40px;
-  font-size: 24px;
+  font-size: 15px;
   cursor: pointer;
   margin: 20px auto;
   display: block;
-  width: 15%;
+  width: 90%;
 }
 
 button:first-of-type {
@@ -61,6 +96,7 @@ button:first-of-type {
 }
 
 button:last-of-type {
-  background-color: #73DBA0;
+  background-color: transparent;
   color: white;
+  border: 2px solid #fff;
 }
