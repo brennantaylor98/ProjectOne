@@ -6,27 +6,17 @@
 <section class="overview">
     <h3>Here is an overview of your finances.</h3>
     <img alt="placeholder for graph"> <!-- placeholder for graph -->
-    <p>Current monthly finances: {{ month_finance }}</p>
+    <p>Current monthly finances: ${{ Wallet.current_savings }}</p>
     <p>Has your monthly finance changed? <a>Click here to update.</a></p>
-    <!-- there will need to be a script to publish all categories, example below-->
-    <p>{{ Category#1 }}: {{ net finances in category#1 }}</p>
-    <p>{{ Category#2 }}: {{ net finances in category#2 }}</p>
+    
 </section>
 
 <section class="expenses">
     <header>
-        <h3>Monthly Expenses</h3>
+        <h3>Monthly Expenses {{ Wallet.total_monthly_expenses }}</h3>
         <button id="addExpenseBtn">+</button>
     </header>
-    {{#if monthlyexpenses.length}}
-    <!-- there will need to be a script for all monthly expenses, example below-->
-
-    <ol>
-        {{#each monthlyexpenses as |monthlyexpense|}}
-            <li>{{ monthlyexpense.name }}: {{ monthlyexpense.expense }}</li>
-        {{/each}}
-    </ol>
-    {{/if}}
+    
     
 </section>
 
@@ -35,9 +25,5 @@
         <h3>goal</h3>
         <button id="setGoalBtn">+</button>
     </header>
-    <!-- there will need to be a script for all monthly expenses, example below-->
-    <ol>
-        <li>{{ Mortage }}: {{ MortagePrice }}</li>
-        <li>{{ Utilities }}: {{ UtilitiesPrice }}</li>
-    </ol>
+    
 </section>
