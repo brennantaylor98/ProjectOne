@@ -74,11 +74,7 @@ try {
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-<<<<<<< HEAD
     res.redirect('/dashboard');
-=======
-    res.redirect('/');
->>>>>>> 064302422da4c211b23f3ef6d903b2c415c3c5b3
     return;
   }
 
