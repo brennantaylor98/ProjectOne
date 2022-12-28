@@ -57,7 +57,7 @@ h2 {
   color: #fff;
   font-family: 'Lemon Milk';
   text-align: left;
-  padding-top: 100px;
+  padding-top: 95px;
 }
 
 .landingh2 {
@@ -67,17 +67,9 @@ h2 {
   margin-left: 10px;
 }
 
-/*
-body::before {
-  content: "";
-  position: fixed;
-  bottom: -250px;
-  right: -300px;
-  width: 700px;
-  height: 700px;
-  border-radius: 50%;
-  border: 3px solid #fff;
-} */
+.bottombutton {
+  margin-bottom: 100px;
+}
 
 button {
   font-family: 'Lemon Milk Light';
