@@ -44,6 +44,13 @@ const signupFormHandler = async (event) => {
   }
 };
 
+function redirectToLogin()
+{
+
+  window.location.href = "/login";
+
+}
+
 document
   .querySelector('.login-form')
   .addEventListener('submit', loginFormHandler);
