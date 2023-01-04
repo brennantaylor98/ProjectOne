@@ -117,3 +117,51 @@ button:hover {
   border: 2px solid #fff;
   transition: 0.5s;
 }
+
+.darkbutton {
+  background-color: white;
+  color: #29BEB7;
+  border: 2px solid #29BEB7;
+}
+
+.darkbutton:hover {
+  background-color: #29BEB7;
+  color: #fff;
+  border: 2px solid #29BEB7;
+  transition: 0.5s;
+}
+
+.topbuffer {
+  margin-top: 80px;
+}
+
+.loginh1 {
+  font-size: 40px;
+  color: #29BEB7;
+  font-family: 'Lemon Milk';
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.centertextlogin {
+  font-family: Helvetica;
+  text-align: justify;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1px;
+  padding-top: 20px;
+}
+
+.loginlink {
+  font-weight: bold;
+  color:#29BEB7;
+}
+
+.loginlink:hover {
+  color:#73DBA0;
+}
+
+.loginlink:visited {
+  color:#29BEB7;
+}
