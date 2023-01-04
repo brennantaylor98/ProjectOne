@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Wallet extends Model {}
+class Expense extends Model {}
 
-Wallet.init(
+Expense.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -11,13 +11,10 @@ Wallet.init(
             primaryKey: true,
             autoIncrement: true,
           },
-        current_savings: {
-            type: DataTypes.FLOAT,
+        source_of_expense: {
+            type: DataTypes.STRING,
           },
-        total_monthly_expenses: {
-            type: DataTypes.FLOAT,
-          },
-        goal: {
+        dollar_amount_of_expense: {
             type: DataTypes.FLOAT,
           },
         user_id: {
@@ -33,8 +30,8 @@ Wallet.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'Wallet',
+        modelName: 'Expense',
     }
 )
 
-module.exports = Wallet;
+module.exports = Expense;

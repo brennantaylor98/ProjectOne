@@ -15,8 +15,21 @@
     <header>
         <h3>Monthly Expenses {{ Wallet.total_monthly_expenses }}</h3>
         <button id="addExpenseBtn">+</button>
-    </header>
-    
+       </header>
+    <h3>Add Expense</h3>
+     <form class="form expense-form">
+      <div class="form-group">
+        <label for="source-of-expense">source of expense:</label>
+        <input class="form-input" type="text" id="source-of-expense" />
+      </div>
+      <div class="form-group">
+        <label for="dollar-amount">dollar amount:</label>
+        <input class="form-input" type="text" id="dollar-amount" />
+      </div>
+            <div class="form-group">
+        <button class="btn btn-primary" type="submit">add expense</button>
+      </div>
+      </form>
     
 </section>
 
@@ -27,3 +40,5 @@
     </header>
     
 </section>
+
+<script src="./js/expense.js"></script>
