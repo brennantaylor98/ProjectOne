@@ -184,6 +184,10 @@ hr {
   border: 1px solid #fff;
 }
 
+h4 {
+  margin-top: 10px;
+}
+
 .dashh2 {
   font-family: 'Helvetica';
   text-transform: uppercase;
@@ -200,7 +204,7 @@ hr {
 
 h3 {
   font-family: 'Lemon Milk Light';
-  font-size: 36px;
+  font-size: 32px;
   color: #29BEB7;
 }
 
@@ -218,7 +222,6 @@ h3 {
   text-align: justify;
   font-size: 11px;
   text-transform: uppercase;
-  line-height: 1px;
   padding-top: 10px;
 }
 
@@ -234,7 +237,7 @@ h3 {
 
 .commentarytext {
   font-family: 'Helvetica';
-  font-size: 19px;
+  font-size: 16px;
 }
 
 .centerfold {
@@ -246,7 +249,7 @@ h3 {
 .homebutton {
   position:fixed;
   font-size: 8px;
-  top: 10px;
+  top: 60px;
 	right: 35px;
 	background-color:transparent;
 	color:#FFF;
@@ -263,7 +266,7 @@ h3 {
 .financesbutton {
   position:fixed;
   font-size: 8px;
-  top: 75px;
+  top: 125px;
 	right: 35px;
 	background-color:transparent;
 	color:#FFF;
@@ -277,7 +280,7 @@ h3 {
 .expensesbutton {
   position:fixed;
   font-size: 8px;
-  top: 140px;
+  top: 190px;
 	right: 35px;
 	background-color:transparent;
 	color:#FFF;
@@ -291,7 +294,7 @@ h3 {
 .logoutbutton {
   position:fixed;
   font-size: 8px;
-  top: 205px;
+  top: 255px;
 	right: 35px;
 	background-color:transparent;
 	color:#FFF;
@@ -303,11 +306,39 @@ h3 {
 
 
 .scroller {
-  height: 750px;
+  height: 745px;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
 .scroller section {
   scroll-snap-align: start;
+}
+
+.addexp {
+  font-size: 12px;
+  width: 70%;
+}
+
+.addexpback {
+  padding: 2px 2px;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  left: 265px;
+  bottom: 75px;
+  position: relative;
+  margin-bottom: -55px;
+}
+
+.hiddensection {
+  display: none;
+}
+
+/* SECTION: CREDITS */
+
+.creditsbottom {
+  margin-top: 450px;
+  max-height: 190px;
+  margin-bottom: 20px;
 }
