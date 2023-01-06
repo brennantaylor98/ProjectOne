@@ -165,3 +165,80 @@ button:hover {
 .loginlink:visited {
   color:#29BEB7;
 }
+
+.dashh1 {
+  text-align: left;
+  font-size: 50px;
+}
+
+/* DASHBOARD STYLING */
+
+.dashh1 {
+  color: #fff;
+  font-size: 60px;
+}
+
+hr {
+  text-align: left;
+  width: 85%;
+  border: 1px solid #fff;
+}
+
+.dashh2 {
+  font-family: 'Helvetica';
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 27px;
+}
+
+.dashname {
+  font-family: 'Lemon Milk';
+  font-weight: bold;
+  color: #fff;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: 'Lemon Milk Light';
+  font-size: 36px;
+  color: #29BEB7;
+}
+
+.monthlyinctext {
+  color: #29BEB7;
+  font-weight: bold;
+}
+
+.monthlysavtext {
+  color: #29BEB7;
+  font-weight: bold;
+}
+
+.subsmallertext {
+  text-align: justify;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 1px;
+  padding-top: 10px;
+}
+
+.pagelink {
+  color: #29BEB7;
+}
+
+.boxdivider {
+  text-align: left;
+  width: 45%;
+  border: 1px solid #D3D3D3;
+}
+
+.commentarytext {
+  font-family: 'Helvetica';
+  font-size: 19px;
+}
+
+.centerfold {
+  text-align: center;
+  font-family: 'Lemon Milk Regular';
+  font-size: 36px;
+}
