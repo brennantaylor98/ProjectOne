@@ -1,4 +1,11 @@
+<a href="/"><button class="homebutton">HOME</button></a>
+<a href="#firstsection"><button class="financesbutton">FINANCES</button></a>
+<a href="#secondsection"><button class="expensesbutton">EXPENSES</button></a>
+<button class="logoutbutton">LOGOUT</button>
 
+<article class="scroller">
+
+<section id="firstsection">
 <div class="d-flex align-items-center">
 <div class="w-100 row justify-content-center">
 <div class="col-10 col-lg-7 mt-5">
@@ -14,19 +21,20 @@
 <div class="d-flex align-items-center">
 <div class="w-100 row justify-content-center">
 <div class="col-10 col-lg-8 bg-white rounded-lg p-5 mt-4 mb-5">
-<section class="overview">
+<div class="overview">
     <h3>Here is an overview of your finances …</h3>
     <hr class="boxdivider" align="left">
     <h4>Your currently monthly income is <span class="monthlyinctext">$2973.43</span> and you are saving <span class="monthlysavtext">$518.49</span> per month.</h4>
     <p class="subsmallertext">Has your monthly income changed? <span id="change-monthly" class="pagelink">Click here to update.</span></p>
     <!--<p>Your current monthly finance is ${{ Wallet.current_savings }}</p>-->
     <p class="commentarytext">The monthly expense that comprises the largest amount of your monthly income is your {{ monthly_expense_name }} at ${{ monthly_expense_amount }}.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
-</div>
-</div>
-</div>
 
-<section class="expenses">
+<section class="expenses" id="secondsection">
 
 <div class="d-flex align-items-center">
     <div class="w-100 row justify-content-center">
@@ -38,9 +46,10 @@
 <div class="w-100 row justify-content-center">
 <div class="col-10 col-lg-8 bg-white rounded-lg p-5 mt-4 mb-5">
     <header>
-        <h3>Monthly Expenses {{ Wallet.total_monthly_expenses }}</h3>
+        <h3>Monthly Expenses</h3>
+        <p>Your current total in monthly expenses is ${{ Wallet.total_monthly_expenses }}.</p>
         <button id="addExpenseBtn" class="darkbutton">+</button>
-       </header>
+    </header>
     <h3>Add Expense</h3>
      <form class="form expense-form">
       <div class="form-group">
@@ -57,13 +66,13 @@
       </form>
     
 </section>
-
-<section class="goals">
+</article>
+<!--<section class="goals">
     <header>
         <h3>goal</h3>
         <button id="setGoalBtn">+</button>
     </header>
     
-</section>
+</section>-->
 
 <script src="./js/expense.js"></script>
