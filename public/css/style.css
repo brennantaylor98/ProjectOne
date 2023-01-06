@@ -242,3 +242,72 @@ h3 {
   font-family: 'Lemon Milk Regular';
   font-size: 36px;
 }
+
+.homebutton {
+  position:fixed;
+  font-size: 8px;
+  top: 10px;
+	right: 35px;
+	background-color:transparent;
+	color:#FFF;
+  cursor:pointer;
+  padding: 1px 1px;
+  height: 55px;
+  width: 55px;
+}
+
+.homebutton:hover {
+ color: #73DBA0;
+}
+
+.financesbutton {
+  position:fixed;
+  font-size: 8px;
+  top: 75px;
+	right: 35px;
+	background-color:transparent;
+	color:#FFF;
+  cursor:pointer;
+  padding: 1px 1px;
+  height: 55px;
+  width: 55px;
+  scroll-behavior: smooth;
+}
+
+.expensesbutton {
+  position:fixed;
+  font-size: 8px;
+  top: 140px;
+	right: 35px;
+	background-color:transparent;
+	color:#FFF;
+  cursor:pointer;
+  padding: 1px 1px;
+  height: 55px;
+  width: 55px;
+  scroll-behavior: smooth;
+}
+
+.logoutbutton {
+  position:fixed;
+  font-size: 8px;
+  top: 205px;
+	right: 35px;
+	background-color:transparent;
+	color:#FFF;
+  cursor:pointer;
+  padding: 1px 1px;
+  height: 55px;
+  width: 55px;
+}
+
+
+.scroller {
+  height: 750px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+}
