@@ -1,49 +1,45 @@
-<header>
-    <h1>Woof woof!</h1>
-    <hr>
-    <h2>Welcome, {{ name }}. Here are your personal finances.</h2>
-</header>
-<section class="overview">
-    <h3>Here is an overview of your finances.</h3>
-    <img alt="placeholder for graph"> <!-- placeholder for graph -->
-    <p>Current monthly finances: ${{ Wallet.current_savings }}</p>
-    <p>Has your monthly finance changed? <a>Click here to update.</a></p>
-    
-</section>
 
-<div>
-  <canvas id="myChart"></canvas>
+<div class="d-flex align-items-center">
+<div class="w-100 row justify-content-center">
+<div class="col-10 col-lg-7 mt-5">
+<header>
+    <h1 class="dashh1">Woof woof!</h1>
+    <hr align="left">
+    <h2 class="dashh2">Welcome, <span class="dashname">{{ name }}</span>. Let's take a look at your personal finances:</h2>
+</header>
+</div>
+</div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<script>
-  const ctx = document.getElementById('myChart');
-
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
-</script>
+<div class="d-flex align-items-center">
+<div class="w-100 row justify-content-center">
+<div class="col-10 col-lg-8 bg-white rounded-lg p-5 mt-4 mb-5">
+<section class="overview">
+    <h3>Here is an overview of your finances …</h3>
+    <hr class="boxdivider" align="left">
+    <h4>Your currently monthly income is <span class="monthlyinctext">$2973.43</span> and you are saving <span class="monthlysavtext">$518.49</span> per month.</h4>
+    <p class="subsmallertext">Has your monthly income changed? <span id="change-monthly" class="pagelink">Click here to update.</span></p>
+    <!--<p>Your current monthly finance is ${{ Wallet.current_savings }}</p>-->
+    <p class="commentarytext">The monthly expense that comprises the largest amount of your monthly income is your {{ monthly_expense_name }} at ${{ monthly_expense_amount }}.</p>
+</section>
+</div>
+</div>
+</div>
 
 <section class="expenses">
+
+<div class="d-flex align-items-center">
+    <div class="w-100 row justify-content-center">
+        <div class="col-10 col-lg-7 mt-5">
+            <h2 class="dashh2 centerfold">Monthly Expenses</h2>
+</div></div></div>
+
+<div class="d-flex align-items-center">
+<div class="w-100 row justify-content-center">
+<div class="col-10 col-lg-8 bg-white rounded-lg p-5 mt-4 mb-5">
     <header>
         <h3>Monthly Expenses {{ Wallet.total_monthly_expenses }}</h3>
-        <button id="addExpenseBtn">+</button>
+        <button id="addExpenseBtn" class="darkbutton">+</button>
        </header>
     <h3>Add Expense</h3>
      <form class="form expense-form">
