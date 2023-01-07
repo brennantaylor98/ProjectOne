@@ -5,7 +5,7 @@
 
 <article class="scroller">
 
-<section id="firstsection">
+<section onload="script();" id="firstsection">
 <div class="d-flex align-items-center">
 <div class="w-100 row justify-content-center">
 <div class="col-10 col-lg-7 mt-5">
@@ -27,7 +27,7 @@
 
     <div class="row">
     <div class="col">
-    <h4>Your currently monthly income is <span class="monthlyinctext">$2973.43</span> and you are saving <span class="monthlysavtext">$518.49</span> per month.</h4>
+    <h4>Your currently monthly income is <span id="monthlyinctext" class="monthlyinctext">Loading</span> and you are saving <span id="monthlysavtext" class="monthlysavtext">Loading</span> per month.</h4>
     <p class="subsmallertext">Has your monthly income changed? <span id="change-monthly" class="pagelink">Click here to update</span>.</p>
     <!--<p>Your current monthly finance is ${{ Wallet.current_savings }}</p>-->
     <p class="commentarytext">The monthly expense that comprises the largest amount of your monthly income is your {{ monthly_expense_name }} at ${{ monthly_expense_amount }}.</p>
@@ -79,13 +79,6 @@
         <h3>Here are your Monthly Expenses…</h3>
         <hr class="boxdivider" align="left">
         <p class="commentarytext">Your recurring monthly expenses help you keep track of where your money is going. All expenses here deduct from your monthly incoming and calculate how much you are saving. Your current total in monthly expenses is ${{ Wallet.total_monthly_expenses }}. Your current expenses are below:</p>
-        <div class="row">
-            <div class="col">
-                <h5>name</h5>
-                <p>$100</p>
-            </div>
-        </div>
-
 
         <button id="addExpenseBtn" class="darkbutton addexp">Click to add a monthly expense</button>
     </header>

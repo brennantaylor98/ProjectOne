@@ -1,11 +1,31 @@
 const ctx = document.getElementById('myChart');
 
-  new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-      datasets: [{
-        label: 'Expense',
-        data: [12, 19, 3, 5, 2, 3],
-      }]
-    },
+async function init() {
+  const response = await fetch('/api/expenses', {
+    method: 'GET',
+    headers: { 'Content-Type': 'application/json' },
   });
+  
+    if (response.ok) {
+      const { expenses } = await response.json();
+      console.log(expenses)
+  
+
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          datasets: [{
+            label: 'Expense',
+            data: expenses.map(e => e.dollar_amount_of_expense),
+          }]
+        },
+      });
+
+
+    } else {
+      alert(response.statusText);
+    }
+  
+}
+
+init();
