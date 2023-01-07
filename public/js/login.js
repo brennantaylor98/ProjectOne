@@ -42,6 +42,7 @@ const signupFormHandler = async (event) => {
       alert(response.statusText);
     }
   }
+  
 };
 
 function redirectToLogin()
