@@ -14,9 +14,9 @@ Wallet.init(
         current_savings: {
             type: DataTypes.FLOAT,
           },
-        total_monthly_expenses: {
-            type: DataTypes.FLOAT,
-          },
+        monthly_income: {
+          type: DataTypes.FLOAT,
+        },
         goal: {
             type: DataTypes.FLOAT,
           },
@@ -36,5 +36,6 @@ Wallet.init(
         modelName: 'Wallet',
     }
 )
+
 
 module.exports = Wallet;

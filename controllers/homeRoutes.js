@@ -24,6 +24,11 @@ router.get('/', async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
+
+  if (req.session.logged_in) {
+    res.redirect('/dashboard');
+    return;
+  }
 });
 
 router.get('/dashboard/:id', async (req, res) => {
@@ -79,6 +84,11 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
+});
+
+
+router.get('/register', (req, res) => {
+  res.render('register');
 });
 
 module.exports = router;
