@@ -19,28 +19,32 @@ const expenseFormHandler = async (event) => {
     }
   };
 
+  const showAddExpense = () => {
+    document.getElementById("expmodal").classList.remove('hiddensection');
+  }
+
+  document.addEventListener("DOMContentLoaded", async () => {
+    const response = await fetch('/api/expenses/savings', {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+    });
+
+      if (response.ok) {
+        const { income, savings } = await response.json();
+        document.getElementById("monthlyinctext").innerHTML=`$${income.toFixed(2)}`;
+        document.getElementById("monthlysavtext").innerHTML=`$${savings.toFixed(2)}`;
+
+      } else {
+        alert(response.statusText);
+      }
+  });
+
+  document
+  .querySelector('#addExpenseBtn')
+  .addEventListener('click', showAddExpense);
+
   document
   .querySelector('.expense-form')
   .addEventListener('submit', expenseFormHandler);
-
-
-var mysql = require('mysql');
-
-var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "Isaac-2010",
-  database: "wallet"
-});
-
-
-con.connect(function(err) {
-  if (err) throw err;
-  var sql = "UPDATE Wallet SET Wallet.total_monthly_expenses = Expense.dollar_amount_of_expense FROM Wallet  INNER JOIN  Expense ON Wallet.user_id = Expense.user_id";
-  con.query(sql, function (err, result) {
-    if (err) throw err;
-    console.log(result.affectedRows + " record(s) updated");
-  });
-});
 
 

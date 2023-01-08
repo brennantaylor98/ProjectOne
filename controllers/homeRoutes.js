@@ -24,6 +24,11 @@ router.get('/', async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
+
+  if (req.session.logged_in) {
+    res.redirect('/dashboard');
+    return;
+  }
 });
 
 router.get('/dashboard/:id', async (req, res) => {
@@ -74,7 +79,7 @@ try {
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/dashboard');
+    res.redirect('/login');
     return;
   }
 
