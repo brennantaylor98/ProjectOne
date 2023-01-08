@@ -206,7 +206,7 @@ console.log('Order API is runnning at ' + port);
 
 
 
-module.exports = router1;
+module.exports = router;
 /*
 module.exports = router2;
 */
