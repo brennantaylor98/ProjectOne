@@ -27,10 +27,10 @@
 
     <div class="row">
     <div class="col">
-    <h4>Your currently monthly income is <span id="monthlyinctext" class="monthlyinctext">Loading</span> and you are saving <span id="monthlysavtext" class="monthlysavtext">Loading</span> per month.</h4>
+    <h4>Your currently monthly income is <span id="monthlyinctext" class="monthlyinctext">{{ monthly_income_amount }}</span> and you are saving <span id="monthlysavtext" class="monthlysavtext">Loading</span> per month.</h4>
     <p class="subsmallertext">Has your monthly income changed? <span id="change-monthly" class="pagelink">Click here to update</span>.</p>
     <!--<p>Your current monthly finance is ${{ Wallet.current_savings }}</p>-->
-    <p class="commentarytext">The monthly expense that comprises the largest amount of your monthly income is your {{ monthly_expense_name }} at ${{ monthly_expense_amount }}.</p>
+    <p class="commentarytext">The monthly expense that comprises the largest amount of your monthly income is your {{ wallet.expense.source_of_expense }} at ${{ monthly_expense_amount }}.</p>
     </div>
     <div class="col">
         <div>
@@ -76,26 +76,24 @@
 <div class="w-100 row justify-content-center">
 <div class="col-10 col-lg-8 bg-white rounded-lg p-5 mt-4 mb-5">
     <header>
-        <h3>Here are your Monthly Expenses…</h3>
+        <h3>Adding Monthly Expenses…</h3>
         <hr class="boxdivider" align="left">
-        <p class="commentarytext">Your recurring monthly expenses help you keep track of where your money is going. All expenses here deduct from your monthly incoming and calculate how much you are saving. Your current total in monthly expenses is ${{ Wallet.total_monthly_expenses }}. Your current expenses are below:</p>
+        <p class="commentarytext">Your recurring monthly expenses help you keep track of where your money is going. All expenses deduct from your monthly income and calculate how much you are saving.</p>
 
         <button id="addExpenseBtn" class="darkbutton addexp">Click to add a monthly expense</button>
     </header>
     
     <div id="expmodal" class="hiddensection">
-    <h3>Add Expense</h3>
+    <h4 class="addExpModal">Add Expense</h3>
      <form class="form expense-form">
       <div class="form-group">
-        <label for="source-of-expense">source of expense:</label>
-        <input class="form-input" type="text" id="source-of-expense" />
+        <input class="form-control form-input" type="text" id="source-of-expense" placeholder="🐕 Expense Name" />
       </div>
       <div class="form-group">
-        <label for="dollar-amount">dollar amount:</label>
-        <input class="form-input" type="text" id="dollar-amount" />
+        <input class="form-control form-input" type="text" id="dollar-amount" placeholder="🪙 Dollar Amount"/>
       </div>
             <div class="form-group">
-        <button class="btn btn-primary" type="submit">add expense</button>
+        <button class="darkbutton" type="submit">Add Expense</button>
       </div>
       </form>
     </div>

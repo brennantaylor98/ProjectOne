@@ -26,12 +26,12 @@ a:active {
   /* -- IMPORTING FONT-FAMILIES */
   @font-face {
       font-family: 'Lemon Milk';
-      src: url(../media/fonts/LEMONMILK-Regular.otf);
+      src: url(../assets/fonts/LEMONMILK-Regular.otf);
   }
   
   @font-face {
       font-family: 'Lemon Milk Light';
-      src: url(../media/fonts/LEMONMILK-Light.otf);
+      src: url(../assets/fonts/LEMONMILK-Light.otf);
   }
   
   @font-face {
@@ -335,10 +335,10 @@ h3 {
   display: none;
 }
 
-/* SECTION: CREDITS */
-
-.creditsbottom {
-  margin-top: 450px;
-  max-height: 190px;
-  margin-bottom: 20px;
+.addExpModal {
+  font-family: 'Lemon Milk Light';
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #73DBA0;
 }

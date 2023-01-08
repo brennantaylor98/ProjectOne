@@ -8,8 +8,6 @@ async function init() {
   
     if (response.ok) {
       const { expenses } = await response.json();
-      console.log(expenses)
-  
 
       new Chart(ctx, {
         type: 'doughnut',
