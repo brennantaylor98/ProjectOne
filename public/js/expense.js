@@ -43,7 +43,6 @@ const expenseFormHandler = async (event) => {
   .querySelector('#addExpenseBtn')
   .addEventListener('click', showAddExpense);
 
-
   document
   .querySelector('.expense-form')
   .addEventListener('submit', expenseFormHandler);
