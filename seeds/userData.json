@@ -3,10 +3,15 @@
     "name": "Sal",
     "email": "sal@hotmail.com",
     "password": "password12345",
-    "monthly_expense_name": "Mortgage",
-    "monthly_expense_amount": "1701.23"
-
-  },
+    "monthly_income_amount": "5431.94",
+    "wallet": 
+    {
+      "expense": {
+        "source_of_expense": "Mortgage",
+        "dollar_amount_of_expense": 1701.23
+      }
+  }
+},
   {
     "name": "Lernantino",
     "email": "lernantino@gmail.com",
