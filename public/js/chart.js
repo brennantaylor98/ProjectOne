@@ -10,7 +10,6 @@ async function init() {
       const { expenses } = await response.json();
       console.log(expenses)
   
-
       new Chart(ctx, {
         type: 'doughnut',
         data: {
@@ -20,7 +19,6 @@ async function init() {
           }]
         },
       });
-
 
     } else {
       alert(response.statusText);
