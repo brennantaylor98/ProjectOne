@@ -107,7 +107,7 @@ This section covers the concept realization and processes behind the creation of
 - [ ] User Accounts Persistence
 - [ ] Collecting User Inputs
 - [ ] Data Visualization
-- [ ] User Goals
+- [ ] User Goals 
 - [ ] Server Logic
 
 
