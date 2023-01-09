@@ -1,7 +1,5 @@
 # **Wallet Watchdog**
 
-![A preview of the deployed application, Wallet Watchdog](./public/assets/images/wwd_relicon_02.png)
-
 > You're a Github user and tech enthusiast looking to support new repositories while also needing an application to help you manage your finances. Introducing... **Wallet Watchdog**. Tell your digital dog about your finances and help manage your expenses by setting monthly goals and limits for yourself. Your wallet watchdog will help you visualize your expenses and adjust your budgets accordingly.
 
 ![A preview of the deployed application, Wallet Watchdog](./public/assets/images/wwd_overview.png)
@@ -131,3 +129,5 @@ The following wireframe conceptualized the overall aesthetic and vision for the 
 Questions, comments, and concerns can be created as issue tickets on GitHub.
 
 This repository was developed for the UC Davis Fullstacks Bootcamp under the UC Davis Continuing and Professional Education.
+
+![The Wallet Watchdog icon](./public/assets/images/wwd_relicon_02.png)
