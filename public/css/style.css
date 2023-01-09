@@ -5,18 +5,16 @@
   background-color: #29BEB7;
 }
 
+    /* removes underlining on links */
 a:link {
   text-decoration: none;
 }
-
 a:visited {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: none;
 }
-
 a:active {
   text-decoration: none;
 }
@@ -26,14 +24,12 @@ a:active {
   /* -- IMPORTING FONT-FAMILIES */
   @font-face {
       font-family: 'Lemon Milk';
-      src: url(../media/fonts/LEMONMILK-Regular.otf);
+      src: url(../assets/fonts/LEMONMILK-Regular.otf);
   }
-  
   @font-face {
       font-family: 'Lemon Milk Light';
-      src: url(../media/fonts/LEMONMILK-Light.otf);
+      src: url(../assets/fonts/LEMONMILK-Light.otf);
   }
-  
   @font-face {
       font-family: 'Xhers';
       src: url(../media/fonts/Xhers\ Regular.otf);
@@ -68,33 +64,14 @@ h2 {
   font-family: 'Lemon Milk Light';
 }
 
-.landingh1 {
-  font-size: 70px;
-  color: #fff;
-  font-family: 'Lemon Milk';
-  text-align: left;
-  padding-top: 55px;
+h3 {
+  font-family: 'Lemon Milk Light';
+  font-size: 32px;
+  color: #29BEB7;
 }
 
-.landingh2 {
-  font-size: 20px;
-  text-align: left;
-  padding-bottom: 45px;
-  margin-left: 10px;
-  opacity: 65%;
-}
-
-.staticplacehold {
-  max-height: 190px;
-  padding-bottom: 30px;
-}
-
-.landingtext {
-  font-family: Helvetica;
-  text-align: justify;
-  font-size: 9px;
-  line-height: 16px;
-  text-transform: uppercase;
+h4 {
+  margin-top: 10px;
 }
 
 button {
@@ -131,9 +108,42 @@ button:hover {
   transition: 0.5s;
 }
 
+/* LANDING PAGE STYLE */
+
+.landingh1 {
+  font-size: 70px;
+  color: #fff;
+  font-family: 'Lemon Milk';
+  text-align: left;
+  padding-top: 55px;
+}
+
+.landingh2 {
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 45px;
+  margin-left: 10px;
+  opacity: 65%;
+}
+
+.staticplacehold {
+  max-height: 190px;
+  padding-bottom: 30px;
+}
+
+.landingtext {
+  font-family: Helvetica;
+  text-align: justify;
+  font-size: 9px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
 .topbuffer {
   margin-top: 80px;
 }
+
+/* LOGIN & REGISTER PAGE STYLE */
 
 .loginh1 {
   font-size: 40px;
@@ -171,7 +181,7 @@ button:hover {
   font-size: 50px;
 }
 
-/* DASHBOARD STYLING */
+/* DASHBOARD STYLE */
 
 .dashh1 {
   color: #fff;
@@ -182,10 +192,6 @@ hr {
   text-align: left;
   width: 85%;
   border: 1px solid #fff;
-}
-
-h4 {
-  margin-top: 10px;
 }
 
 .dashh2 {
@@ -200,12 +206,6 @@ h4 {
   font-weight: bold;
   color: #fff;
   font-size: 30px;
-}
-
-h3 {
-  font-family: 'Lemon Milk Light';
-  font-size: 32px;
-  color: #29BEB7;
 }
 
 .monthlyinctext {
@@ -335,10 +335,10 @@ h3 {
   display: none;
 }
 
-/* SECTION: CREDITS */
-
-.creditsbottom {
-  margin-top: 450px;
-  max-height: 190px;
-  margin-bottom: 20px;
+.addExpModal {
+  font-family: 'Lemon Milk Light';
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #73DBA0;
 }

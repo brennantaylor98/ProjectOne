@@ -8,14 +8,12 @@ async function init() {
   
     if (response.ok) {
       const { expenses } = await response.json();
-      console.log(expenses)
-  
 
       new Chart(ctx, {
         type: 'doughnut',
         data: {
           datasets: [{
-            label: 'Expense',
+            label: expenses.map(e => e.source_of_expense),
             data: expenses.map(e => e.dollar_amount_of_expense),
           }]
         },
