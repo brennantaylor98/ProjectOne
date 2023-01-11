@@ -3,9 +3,9 @@ require('dotenv').config();
 let sequelize;
 
 if (process.env.JAWSDB_URL) {
-  sequelize = new Sequelize(process.env.JAWSDB_URL);
+  sequelize = new sequelize(process.env.JAWSDB_URL);
 } else {
-  sequelize = new Sequelize(
+  sequelize = new sequelize(
     'wallet_db',
     'ac93yyiydjh62ly1',
     'hryask8v7l9cjs5h',
