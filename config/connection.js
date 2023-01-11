@@ -1,17 +1,12 @@
-const Sequelize = require('sequelize');
-require('dotenv').config();
-
-let sequelize;
-
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
   sequelize = new Sequelize(
-    process.env.DB_NAME || "wallet_db",
-    process.env.DB_USER || "root",
-    process.env.DB_PASSWORD,
+    'wallet_db',
+    'ac93yyiydjh62ly1',
+    'hryask8v7l9cjs5h',
     {
-      host: 'localhost',
+      host: 'qz8si2yulh3i7gl3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
       dialect: 'mysql',
       port: 3306
     }

@@ -132,3 +132,9 @@ Questions, comments, and concerns can be created as issue tickets on GitHub.
 This repository was developed for the UC Davis Fullstacks Bootcamp under the UC Davis Continuing and Professional Education.
 
 ![The Wallet Watchdog icon](./public/assets/images/wwd_relicon_02.png)
+
+
+
+
+
+
