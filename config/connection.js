@@ -7,11 +7,11 @@ if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
   sequelize = new Sequelize(
-    'wallet_db',
-    'ckgem149wj8yf6ye',
-    'mprlwevur9n554k6',
+    "wallet_db",
+    "wallet",
+    "watchdogss",
     {
-      host: 'pxukqohrckdfo4ty.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+      host: 'localhost',
       dialect: 'mysql',
       port: 3306
     }
