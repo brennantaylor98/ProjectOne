@@ -7,9 +7,9 @@ if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
   sequelize = new Sequelize(
-    "wallet_db",
-    "wallet",
-    "watchdogss",
+    process.env.DB_NAME || "wallet_db",
+    process.env.DB_USER || "wallet",
+    process.env.DB_PASSWORD || "watchdogss",
     {
       host: 'localhost',
       dialect: 'mysql',
