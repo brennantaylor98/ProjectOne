@@ -8,7 +8,7 @@ if (process.env.JAWSDB_URL) {
 } else {
   sequelize = new Sequelize(
     process.env.DB_NAME || "wallet_db",
-    process.env.DB_USER || "wallet",
+    process.env.DB_USER || "root",
     process.env.DB_PASSWORD,
     {
       host: 'localhost',
