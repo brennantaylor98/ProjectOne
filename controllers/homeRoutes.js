@@ -3,6 +3,10 @@ const { Wallet, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
+  if (req.session.logged_in) {
+    return res.redirect('/dashboard');
+  }
+
   try {
     // Get all wallets and JOIN with user data
     const walletData = await Wallet.findAll({
@@ -17,17 +21,12 @@ router.get('/', async (req, res) => {
     const wallets = walletData.map((wallet) => wallet.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('home', { 
+    return res.render('home', { 
       wallets,
       logged_in: req.session.logged_in 
     });
   } catch (err) {
-    res.status(500).json(err);
-  }
-
-  if (req.session.logged_in) {
-    res.redirect('/dashboard');
-    return;
+    return res.status(500).json(err);
   }
 });
 
@@ -46,12 +45,12 @@ router.get('/dashboard/:id', async (req, res) => {
 
     console.log(wallet);
 
-    res.render('wallet', {
+    return res.render('wallet', {
       ...wallet,
       logged_in: req.session.logged_in
     });
   } catch (err) {
-    res.status(500).json(err);
+    return res.status(500).json(err);
   }
 });
 
@@ -66,12 +65,12 @@ try {
 
   const user = userData.get({ plain: true });
 
-  res.render('dashboard', {
+  return res.render('dashboard', {
     ...user,
     logged_in: true
   });
 } catch (err) {
-  res.status(500).json(err);
+  return res.status(500).json(err);
 }
 });
 
@@ -79,21 +78,19 @@ try {
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/dashboard');
-    return;
+    return res.redirect('/dashboard');
   }
 
-  res.render('login');
+  return res.render('login');
 });
 
 router.get('/register', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/dashboard');
-    return;
+    return res.redirect('/dashboard');
   }
 
-  res.render('register');
+  return res.render('register');
 });
 
 module.exports = router;

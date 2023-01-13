@@ -25,10 +25,10 @@ router1.get('/', async (req, res) => {
 
     const expenses = expensesData.map((wallet) => wallet.get({ plain: true }));
 
-    res.status(200).json({ expenses });
+    return res.status(200).json({ expenses });
 
   } catch (err) {
-    res.status(500).json(err);
+    return res.status(500).json(err);
   }
 });
 
@@ -55,10 +55,10 @@ router1.get('/savings', async (req, res) => {
       savings -= expense.dollar_amount_of_expense;
     })
 
-    res.status(200).json({ savings, income: wallet.monthly_income  });
+    return res.status(200).json({ savings, income: wallet.monthly_income  });
 
   } catch (err) {
-    res.status(500).json(err);
+    return res.status(500).json(err);
   }
 });
 
@@ -69,10 +69,10 @@ router1.post('/', withAuth, async (req, res) => {
         user_id: req.session.user_id,
       });
   
-      res.status(200).json(ExpenseData);
+      return res.status(200).json(ExpenseData);
       console.log("Expense post is working")
     } catch (err) {
-      res.status(400).json(err);
+      return res.status(400).json(err);
     }
   });
 /*
