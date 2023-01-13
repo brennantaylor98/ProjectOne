@@ -1,16 +1,17 @@
-const sequelize = require('sequelize');
+const Sequelize = require('sequelize');
 require('dotenv').config();
+
 let sequelize;
 
 if (process.env.JAWSDB_URL) {
-  sequelize = new sequelize(process.env.JAWSDB_URL);
+  sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
-  sequelize = new sequelize(
-    'wallet_db',
-    'ac93yyiydjh62ly1',
-    'hryask8v7l9cjs5h',
+  sequelize = new Sequelize(
+    process.env.DB_NAME,
+    process.env.DB_USER,
+    process.env.DB_PASSWORD,
     {
-      host: 'qz8si2yulh3i7gl3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+      host: 'localhost',
       dialect: 'mysql',
       port: 3306
     }
@@ -18,4 +19,3 @@ if (process.env.JAWSDB_URL) {
 }
 
 module.exports = sequelize;
-
