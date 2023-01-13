@@ -8,7 +8,6 @@ var  router2 = express.Router();
 
 const { Expense, Wallet } = require('../../models');
 const withAuth = require('../../utils/auth');
-var  Db = require('../../db/dboperations');
 
 app.use(bodyParser.urlencoded({ extended:  true }));
 app.use(bodyParser.json());
